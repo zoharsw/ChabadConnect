@@ -73,8 +73,6 @@ if (!isset($_SESSION['username'])) {
                             echo '<input type="hidden" name="NumberOfVolunteering" value="' . $volunteering['NumberOfVolunteering'] . '">';
                             echo '<button type="submit" name="cancel">Unregister</button>';
                             echo '</form>';
-                        } elseif (!is_null($volunteering['Volunteer_Name']) && $volunteering['Volunteer_Name'] != $_SESSION['username']) {
-                            echo 'Occupied'; // "Occupied" in Hebrew
                         } else {
                             // Add a form for the user to enter the NumberOfVolunteering and submit
                             echo '<form method="post" action="SubmitVolunteering.php">';
