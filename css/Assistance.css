@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #353935;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4444;
+}
+
+nav ul li a.active {
+    color: #ff4444;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff6666;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.section {
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    text-align: center;
+    color: #221f1f;
+    margin-bottom: 20px;
+}
+
+.section label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.section input[type="text"],
+.section input[type="number"],
+.section input[type="tel"],
+.section select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.section input[type="text"]:focus,
+.section input[type="number"]:focus,
+.section input[type="tel"]:focus,
+.section select:focus {
+    border-color: #ff4444;
+    outline: none;
+}
+
+.section .button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section .button button {
+    display: inline-block;
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.section .button button:hover {
+    background-color: #ff6666;
+    transform: scale(1.05);
+}
+
+.section .button button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    margin-top: 90px; 
+    padding: 5px;
+}

@@ -1,0 +1,131 @@
+
+.volunteering-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px; 
+}
+
+.volunteering-item {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.volunteering-item div {
+    flex: 1 1 200px;
+    margin: 5px;
+}
+
+.volunteering-item h3, .volunteering-item p {
+    margin: 5px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    color: #343a40;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+    font-size: 18px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.complete-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.incomplete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.complete-button:hover, .incomplete-button:hover {
+    transform: translateY(-2px);
+}
+
+.complete-button:active, .incomplete-button:active {
+    transform: translateY(2px);
+}
+
+.map-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -2.5cm; 
+    right: 20px;
+}
+    
+.map-container p {
+    margin: 0 10px 0 0;
+    color: red; 
+}
+    
+.map-pin {
+    width: 50px; 
+    height:50px; 
+    cursor: pointer;
+}
+    
+.volunteering-container {
+    position: relative; 
+}
+
+footer {
+    margin-top: 70px; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .volunteering-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .volunteering-item div {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button-group button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+
+

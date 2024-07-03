@@ -1,0 +1,77 @@
+h2 {
+    margin-top: 80px;
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+table td:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin bottom to create space between table and button */
+    justify-content: center;
+    display: flex;
+    
+    
+
+}
+
+
+
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 05px 05px; /* Adjust padding for better button appearance */
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  
+    
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(2px);
+}

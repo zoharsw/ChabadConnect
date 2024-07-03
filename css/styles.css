@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    background-color: #eed9c4;
+    color: #fff;
+    padding: 20px 0;  /* Add padding to ensure header content is well spaced */
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
+}
+
+header #logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+header #logo span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #da5439;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #353935;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4444;
+}
+
+nav ul li a.active {
+    color: #ff4444;
+}
+
+.nav-btn {
+    display: inline-block;
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #ff6666;
+    transform: scale(1.05);
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff6666;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+section#welcome {
+    text-align: center;
+    color: #221f1f;
+    padding: 100px 0;
+}
+
+#hero {
+    margin-bottom: 50px;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#events.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+#events h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #221f1f;
+}
+
+#event-slider {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.event {
+    width: calc(33.3333% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+
+.event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event h3 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #221f1f;
+}
+
+.event p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+#login-section form,
+#login-section a {
+    margin-right: 30px; 
+}
+
+#user-greeting {
+    font-size: 14px; 
+    color: #666; 
+    margin-top: 5px; 
+}
+
+#login-btn,
+#logout-btn {
+    background-color: #ff4444;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#login-btn:hover,
+#logout-btn:hover {
+    background-color: #ff6666;
+}
+
+footer {
+    background-color: #221f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#next-btn,
+#prev-btn {
+    background-color: #555; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+}
+
+#next-btn:hover,
+#prev-btn:hover {
+    background-color: #777; 
+    transform: scale(1.05); 
+}
+
+#next-btn:active,
+#prev-btn:active {
+    transform: scale(0.95); 
+}
+
+
+dl, ol, ul {
+    margin-top: -20px;
+    margin-bottom: 1rem;
+}
