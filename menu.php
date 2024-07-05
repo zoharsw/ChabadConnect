@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Chabad Connect</title>
 </head>
 <body>
     <header>
@@ -16,6 +15,11 @@
                    <img src="./Image/logo.png" alt="Chabad Connect Logo">
                 </a>
                 <span>Chabad Connect</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
             <nav>
                 <ul>
@@ -42,5 +46,11 @@
             </nav>
         </div>
     </header>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

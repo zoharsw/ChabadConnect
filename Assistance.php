@@ -41,6 +41,6 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
     </div>
-    <?php include 'footer.html'; ?>
+     <?php include 'footer.html'; ?>
 </body>
 </html>
