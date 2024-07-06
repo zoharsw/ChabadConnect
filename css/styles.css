@@ -19,7 +19,7 @@ body {
 header {
     background-color: #eed9c4;
     color: #fff;
-    padding: 20px 0;  /* Add padding to ensure header content is well spaced */
+    padding: 20px 0; 
 }
 
 header #logo {
