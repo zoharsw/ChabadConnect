@@ -85,10 +85,6 @@
 
                 // Display coordinates in the console (or you can display them on the map or an element).
                 console.log("Coordinates: ", loc.latitude, loc.longitude);
-
-                // Optionally display the coordinates on the map.
-                // var infobox = new Microsoft.Maps.Infobox(loc, { title: 'Coordinates', description: 'Lat: ' + loc.latitude + ', Lon: ' + loc.longitude });
-                // infobox.setMap(map);
             });
 
             // Double-click event handler to add a pin.
@@ -104,8 +100,6 @@
                 // Add the pin to the map and the pins array.
                 map.entities.push(pin);
                 pins.push(pin);
-                
-
 
                 // Attach a right-click event handler to remove the pin.
                 Microsoft.Maps.Events.addHandler(pin, 'click', function () {
