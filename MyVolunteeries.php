@@ -74,7 +74,7 @@ if (!isset($_SESSION['username'])) {
                             echo '<button type="submit" name="cancel">Unregister</button>';
                             echo '</form>';
                         } elseif (!is_null($volunteering['Volunteer_Name']) && $volunteering['Volunteer_Name'] != $_SESSION['username']) {
-                            echo 'Occupied'; // "Occupied" in Hebrew
+                            echo 'Occupied'; 
                         } else {
                             // Add a form for the user to enter the NumberOfVolunteering and submit
                             echo '<form method="post" action="SubmitVolunteering.php">';
@@ -86,22 +86,17 @@ if (!isset($_SESSION['username'])) {
                     echo '</div>';
                     echo '</div>';
                 }
-                
-                
-                
-               
+                          
             } else {
                 echo '<p>No volunteerings found for the logged-in user.</p>';
             }
             
-            
-
             $stmt->close();
             $conn->close();
             ?>
         </div>
     </main>
-    <!-- Bootstrap JS and dependencies -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
