@@ -27,7 +27,6 @@ if (isset($_SESSION['username'])) {
     $stmt->bind_param("s", $username);
 
     if ($stmt->execute()) {
-        // Optionally, you can destroy the session after deletion
         session_destroy();
         // Redirect to login page or another page
         header("Location: login.php");
